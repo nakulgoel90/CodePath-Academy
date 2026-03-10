@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CodePath Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <h2>CodePath Academy</h2>
+  </div>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3 class="menu-title">Menu</h3>
+      <div class="menu-item active">
+        <a href="dashboard.html">🏠 Dashboard</a>
+      </div>
+
+      <div class="menu-item">
+        <a href="progress.html">📊 Progress</a>
+      </div>
+      <div class="menu-item">
+        <a href="profile.html">👤 Profile</a>
+
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+      <div class="main-wrapper">
+
+        <!-- LEFT CONTENT -->
+        <div class="left-content">
+
+          <h1>Welcome Nakul 👋</h1>
+
+          <div class="top-info">
+            <div>🔥 <span id="streak">5</span> Day Streak</div>
+            <div>📊 42% Overall Progress</div>
+          </div>
+
+          <!-- Stats -->
+          <div class="stats">
+            <div class="stat-card">
+              <h3 id="lessons">24</h3>
+              <p>Lessons</p>
+            </div>
+
+            <div class="stat-card">
+              <h3 id="doubts">15</h3>
+              <p>Doubts</p>
+            </div>
+
+            <div class="stat-card">
+              <h3 id="quizzes">6</h3>
+              <p>Quizzes</p>
+            </div>
+
+            <div class="stat-card">
+              <h3 id="accuracy">85%</h3>
+              <p>Accuracy</p>
+            </div>
+          </div>
+
+          <!-- Continue Learning -->
+          <div class="card">
+            <h3>Continue Learning</h3>
+            <p>Python → Loops (Level 2)</p>
+            <button class="primary-btn">Resume</button>
+          </div>
+
+          <!-- Courses -->
+          <div class="card">
+            <h3>Your Courses</h3>
+
+            <div class="language-grid">
+
+              <div class="lang-box">
+                <h2>🐍 Python</h2>
+                <p>Level 2</p>
+                <div class="small-progress">
+                  <div class="small-bar" style="width:60%"></div>
+                </div>
+                <button>Continue</button>
+              </div>
+
+              <div class="lang-box">
+                <h2>☕ Java</h2>
+                <p>Level 1</p>
+                <div class="small-progress">
+                  <div class="small-bar" style="width:30%"></div>
+                </div>
+                <button>Start</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Activity -->
+          <div class="card">
+            <h3>Recent Activity</h3>
+            <ul class="activity">
+              <li>✔ Completed Variables</li>
+              <li>✔ Asked about Loops</li>
+              <li>✔ Scored 8/10 in Quiz</li>
+            </ul>
+          </div>
+
+          <!-- Achievements -->
+          <div class="card">
+            <h3>Achievements 🏆</h3>
+            <div class="badges">
+              <div class="badge">🔥 5 Day Streak</div>
+              <div class="badge">🎯 First Quiz</div>
+              <div class="badge">📚 20 Lessons</div>
+            </div>
+          </div>
+
+        </div>
+
+           <!-- AI Assistant -->
+    <div class="ai-panel">
+
+        <h3>🤖 AI Assistant</h3>
+
+        <div class="chat-box"></div>
+
+        <input type="text" placeholder="Ask your doubt...">
+
+    </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+  <script src="script.js"></script>
+</body>
+
+</html>
